@@ -1,0 +1,7 @@
+{
+  "name": "Global Linkforce Inc",
+  "description": "Corporate services website with integrated AI navigation, booking, and voice assistance for Global Linkforce Inc.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
