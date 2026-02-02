@@ -10,7 +10,8 @@ export interface ServiceDetail {
   title: string;
   category: ServiceCategory;
   shortDescription: string;
-  fullDescription: string;
+  fullDescription: string; // Keep for summaries
+  extendedDescription: string[]; // New: For detailed page content
   iconName: string; // Mapping to Lucide icon
   capabilities: string[];
 }

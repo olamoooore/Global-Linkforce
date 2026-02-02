@@ -34,6 +34,7 @@ export const ServicePage: React.FC = () => {
       {/* Header Banner */}
       <div className="bg-slate-900 pt-32 pb-20 text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-orange-600/10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-10 grayscale"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
            <Link to="/" className="inline-flex items-center text-slate-400 hover:text-white mb-6 transition-colors text-sm font-medium">
               <ArrowLeft className="w-4 h-4 mr-2" /> Back to Gateway
@@ -56,19 +57,28 @@ export const ServicePage: React.FC = () => {
             {/* Left Column: Details */}
             <div className="lg:col-span-2 space-y-8">
                 <div className="bg-white rounded-xl p-8 shadow-sm border border-slate-100">
-                    <h2 className="text-2xl font-bold text-slate-900 mb-4">Service Overview</h2>
-                    <p className="text-slate-600 leading-relaxed text-lg mb-8">
-                        {service.fullDescription}
-                    </p>
+                    <h2 className="text-2xl font-bold text-slate-900 mb-6 border-b border-slate-100 pb-4">Comprehensive Service Overview</h2>
                     
-                    <h3 className="text-lg font-bold text-slate-900 mb-4">Core Capabilities</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        {service.capabilities.map((cap, idx) => (
-                            <div key={idx} className="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-100">
-                                <CheckCircle className="w-5 h-5 text-orange-500 mr-3 shrink-0" />
-                                <span className="font-medium text-slate-700">{cap}</span>
-                            </div>
-                        ))}
+                    <div className="space-y-6 text-slate-600 leading-relaxed text-lg font-light">
+                        {service.extendedDescription ? (
+                            service.extendedDescription.map((paragraph, idx) => (
+                                <p key={idx}>{paragraph}</p>
+                            ))
+                        ) : (
+                            <p>{service.fullDescription}</p>
+                        )}
+                    </div>
+                    
+                    <div className="mt-10">
+                        <h3 className="text-lg font-bold text-slate-900 mb-4 uppercase tracking-wide text-sm">Key Operational Capabilities</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {service.capabilities.map((cap, idx) => (
+                                <div key={idx} className="flex items-center p-4 bg-slate-50 rounded-lg border border-slate-100 hover:border-orange-200 transition-colors">
+                                    <CheckCircle className="w-5 h-5 text-orange-500 mr-3 shrink-0" />
+                                    <span className="font-medium text-slate-700">{cap}</span>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
 

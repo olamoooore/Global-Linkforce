@@ -9,36 +9,56 @@ export const SERVICES: ServiceDetail[] = [
     title: 'Medical Transportation (NEMT)',
     category: ServiceCategory.TRANSPORTATION,
     shortDescription: 'HIPAA-compliant non-emergency medical transport and critical courier services.',
-    fullDescription: 'Our NEMT division operates with clinical precision, prioritizing patient safety, punctuality, and dignity. We provide specialized transport for dialysis, chemotherapy, and post-operative care, as well as secure medical courier services for labs and pharmacies.',
+    fullDescription: 'Our NEMT division operates with clinical precision, prioritizing patient safety, punctuality, and dignity.',
+    extendedDescription: [
+      "Global Linkforce Inc. sets the standard for Non-Emergency Medical Transportation (NEMT). We understand that medical transport is not just about moving people; it is about ensuring continuity of care. Our fleet is equipped to handle diverse mobility needs, including ambulatory, wheelchair, and stretcher transport, ensuring that every patient arrives at their appointment safely and comfortably.",
+      "Our drivers are more than just chauffeurs; they are certified professionals trained in PASS (Passenger Assistance Safety and Sensitivity), CPR/First Aid, and strict HIPAA compliance protocols. We utilize advanced routing software to guarantee on-time arrivals for dialysis treatments, chemotherapy sessions, post-operative discharges, and routine check-ups.",
+      "Beyond patient transport, our Medical Courier service provides a secure chain of custody for sensitive medical items. From biological specimens and pharmaceuticals to confidential medical records, we ensure time-critical delivery with real-time tracking and temperature-controlled options where necessary."
+    ],
     iconName: 'Activity',
-    capabilities: ['Wheelchair/Stretcher Accessible', 'Medical Courier', 'Ambulatory Transport', 'Door-to-Door Assistance']
+    capabilities: ['Wheelchair & Stretcher Fleets', 'Certified Medical Couriers', 'Real-Time GPS Tracking', 'Door-to-Door Assistance', 'Hospital Discharge Coordination']
   },
   {
     id: 'logistics-local',
     title: 'Advanced Logistics',
     category: ServiceCategory.LOGISTICS,
     shortDescription: 'Precision local logistics and last-mile delivery optimization.',
-    fullDescription: 'We engineer local supply chains for speed and reliability. Whether it is same-day legal document delivery, routed pharmaceutical distribution, or just-in-time manufacturing parts, our fleet is integrated with real-time tracking.',
+    fullDescription: 'We engineer local supply chains for speed and reliability, optimizing the last mile for businesses.',
+    extendedDescription: [
+      "In the fast-paced urban environment, the 'last mile' is often the most critical and expensive part of the supply chain. Global Linkforce's Advanced Logistics division leverages AI-driven route optimization to deliver unmatched speed and efficiency for local deliveries. We serve legal firms, medical facilities, automotive parts distributors, and e-commerce retailers who demand same-day precision.",
+      "Our infrastructure allows for scheduled routed deliveries—perfect for inter-office mail, daily lab pickups, or retail restocking—as well as on-demand 'hot shot' services for urgent needs. By integrating directly with your inventory systems via API, we provide full visibility into your local supply chain.",
+      "We also offer warehousing and cross-docking solutions for short-term storage and sorting, allowing businesses to reduce their overhead while maintaining rapid access to their inventory. Our drivers are vetted, uniformed, and professional, representing your brand with excellence at every drop-off."
+    ],
     iconName: 'Truck',
-    capabilities: ['Route Optimization', 'Same-Day Courier', 'Scheduled Distribution', 'Asset Tracking']
+    capabilities: ['AI-Driven Route Optimization', 'Same-Day & Rush Courier', 'Scheduled Distribution Routes', 'Asset Tracking & chain of custody', 'White Glove Delivery']
   },
   {
     id: 'shipping-freight',
     title: 'Global Freight & Shipping',
     category: ServiceCategory.SHIPPING,
     shortDescription: 'Scalable domestic and international freight solutions via Air, Ocean, and Ground.',
-    fullDescription: 'Navigating global trade complexities with ease. We handle customs documentation, freight consolidation, and multi-modal transport strategies to ensure your cargo reaches any global destination efficiently.',
+    fullDescription: 'Navigating global trade complexities with ease, handling everything from customs to final delivery.',
+    extendedDescription: [
+      "Global Linkforce connects your business to the world. Our Global Freight & Shipping division provides comprehensive freight forwarding services, managing the complexities of international trade so you don't have to. Whether you are shipping a single pallet or full container loads (FCL), we have the carrier relationships to secure the best rates and transit times.",
+      "For time-sensitive shipments, our Air Freight solutions offer expedited global reach. For larger, cost-conscious volumes, our Ocean Freight services provide reliable connectivity to major ports worldwide. Domestically, our Ground Freight network covers Less-Than-Truckload (LTL) and Full-Truckload (FTL) needs across North America.",
+      "We handle the entire administrative burden, including customs brokerage, import/export documentation, and cargo insurance. Our proactive tracking systems notify you of milestones and exceptions, giving you the control to manage your supply chain proactively rather than reactively."
+    ],
     iconName: 'Globe',
-    capabilities: ['International Air/Ocean Freight', 'Domestic FTL/LTL', 'Customs Brokerage', 'Cargo Insurance']
+    capabilities: ['International Air & Ocean Freight', 'Domestic FTL & LTL Trucking', 'Customs Brokerage & Compliance', 'Cargo Insurance & Risk Management', 'Intermodal Solutions']
   },
   {
     id: 'procurement-sourcing',
     title: 'Strategic Procurement',
     category: ServiceCategory.PROCUREMENT,
     shortDescription: 'End-to-end product sourcing, vendor negotiation, and acquisition management.',
-    fullDescription: 'Transforming procurement from a cost center to a strategic advantage. We leverage global networks to source high-quality materials, negotiate competitive contracts, and manage the entire procure-to-pay lifecycle.',
+    fullDescription: 'Transforming procurement from a cost center to a strategic advantage through global sourcing networks.',
+    extendedDescription: [
+      "Effective procurement is about more than just buying; it is about strategic sourcing that drives value, reduces risk, and ensures quality. Global Linkforce's Strategic Procurement division acts as an extension of your purchasing department. We leverage a vast network of vetted global suppliers to source raw materials, finished goods, and operational supplies at competitive prices.",
+      "Our team manages the entire procure-to-pay lifecycle. We conduct rigorous vendor audits, negotiate favorable contracts, and oversee quality control inspections before goods even leave the factory. This end-to-end management eliminates the headaches of dealing with multiple vendors and language barriers.",
+      "Whether you need to procure medical equipment, construction materials, or technology hardware, we provide transparent cost structures and reliable delivery timelines. We also assist with demand planning and inventory management strategies to prevent stockouts and overstock situations."
+    ],
     iconName: 'Briefcase',
-    capabilities: ['Global Sourcing', 'Vendor Management', 'Bulk Acquisition', 'Supply Chain Audits']
+    capabilities: ['Global Supplier Sourcing', 'Vendor Negotiation & Management', 'Bulk Acquisition Strategy', 'Supply Chain Audits', 'Quality Control Inspections']
   }
 ];
 

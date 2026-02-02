@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { AIChatWidget } from './components/AIChatWidget';
 import { Home } from './pages/Home';
 import { ServicePage } from './pages/ServicePage';
+import { About } from './pages/About';
 
 const App: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             <Route path="/services/:id" element={<ServicePage />} />
           </Routes>
         </main>
